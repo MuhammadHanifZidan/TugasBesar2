@@ -15,13 +15,14 @@
 }
 
 .facility-title {
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 20px;
   font-size: 72px; 
   color: white;
   text-align: center;
   font-family: "Bebas Neue";
   letter-spacing: 5px;
+  animation: fadeIn 0.6s ease forwards;
 }
 
 .fac-sub-title {
@@ -35,6 +36,7 @@
   margin: 0 auto 50px;
   color: white;
   opacity: 0.8;
+  animation: fadeIn 0.8s ease forwards;
 }
 
 .facility-content {
@@ -80,6 +82,9 @@
   border-radius: 12px;
   transition: transform 0.3s ease;
   align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.6s ease-out forwards;
 }
 
 .card-info {
@@ -144,5 +149,21 @@
 @media (max-width: 480px) {
   .facility-content {
     grid-template-columns: 1fr;
+  }
+}
+
+.facility-card:nth-child(1) { animation-delay: 0s; }
+.facility-card:nth-child(2) { animation-delay: 0.1s; }
+.facility-card:nth-child(3) { animation-delay: 0.2s; }
+.facility-card:nth-child(4) { animation-delay: 0.3s; }
+.facility-card:nth-child(5) { animation-delay: 0.4s; }
+.facility-card:nth-child(6) { animation-delay: 0.5s; }
+.facility-card:nth-child(7) { animation-delay: 0.6s; }
+.facility-card:nth-child(8) { animation-delay: 0.7s; }
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

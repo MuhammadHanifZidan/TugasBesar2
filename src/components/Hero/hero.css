@@ -16,17 +16,9 @@
     margin: 0 auto;
     padding: 20px;
 }
-.header .wrapper .cta {
-  font-family: "Bebas Neue";
-  font-size: 35px;
-  padding: 10px 75px;
-  color: white;
-  background-color: #37B7C3;
-  border-radius: 30px;
-  text-decoration: none;
-}
 
-h1{
+
+.header h1 {
     color: white;
     font-size: 108px;
     font-family: "montserrat";
@@ -35,6 +27,9 @@ h1{
     margin-bottom: 107px;
     width: auto;
     white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.8s;
 }
 
 h2{
@@ -58,10 +53,49 @@ p{
     text-align: justify;
 }
 
-.sub-title{
+.sub-title {
     font-family: "Bebas Neue";
     font-size: 34px;
     text-align: center;
     letter-spacing: normal;
     font-weight: lighter;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.header .wrapper .cta {
+  position: relative;
+  font-family: "Bebas Neue";
+  font-size: 35px;
+  padding: 10px 75px;
+  color: white;
+  background:#37B7C3;
+  border: 5px solid transparent;
+  border-radius: 32px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+  animation-delay: 1.5s;
+}
+
+.header .wrapper .cta:hover {
+  background:
+    linear-gradient(to right, #088395, #071952) border-box,
+    rgba(0, 0, 0, 0.46) padding-box;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -80,3 +80,45 @@
 .line-footer{
     margin-top: 32px;
 }
+
+/* Responsive untuk layar kecil */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px; /* Kurangi jarak antar konten */
+  }
+
+  .footer-content:first-child {
+    flex: unset;
+    max-width: 100%;
+  }
+
+  .footer-content {
+    max-width: 100%;
+  }
+}
+
+/* Responsive untuk layar sangat kecil / HP */
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+
+  .footer p,
+  .footer a {
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+  }
+}

@@ -1,13 +1,54 @@
+/* Base styles */
+.wrapper {
+  opacity: 1;
+}
+
+/* Animation styles */
+.title {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.title.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Line {
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: opacity 0.6s ease, transform 0.8s ease;
+}
+
+.Line.show {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.topic-image, .topics {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.topic-image.show, .topics.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Existing layout styles (tetap sama) */
 .wrapper .title {
   text-align: center;
 }
 
-.wrapper .Line{
-  margin-top: -32px;
+.wrapper .Line {
+  margin-top: 10px;
   margin-bottom: 64px;
 }
 
-.wrapper .container{
+.wrapper .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -15,31 +56,28 @@
   row-gap: 32px;
 }
 
-.wrapper .container .topics{
+.wrapper .container .topics {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-
-h2{
-    font-family: "Bebas Neue";
-    font-size: 50px;
-    color: white;
-    font-weight: 400;
+h2 {
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  color: white;
+  font-weight: 400;
 }
 
-h3{
-    font-family: "Bebas Neue";
-    font-size: 20px;
-    color: white;
-    letter-spacing: 15%;
+h3 {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  color: white;
+  letter-spacing: 15%;
 }
 
-p{
-    font-family: "Poppins";
-    font-size: 16px;
-    color: white;
-    text-align: justify;
+p {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: white;
+  text-align: justify;
 }
-
-
