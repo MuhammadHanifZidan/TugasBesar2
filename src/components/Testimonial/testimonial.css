@@ -1,0 +1,76 @@
+.wrapper .line {
+  margin-top: -32px;
+  margin-bottom: 64px;
+}
+
+p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-align: justify;
+  height: auto;
+  margin: 0; 
+}
+
+h2 {
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  color: white;
+  font-weight: 400;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px; 
+  object-fit: cover; 
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; 
+}
+
+.test {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 20px; 
+}
+
+.test-sec {
+  display: flex;
+  flex-direction: column;
+  width: 380px; 
+  height: 380px; 
+  background-color: rgba(0, 0, 0, 0.25); 
+  border-radius: 12px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  justify-content: space-between; 
+  row-gap: 5px;
+}
+.img {
+  display: flex;
+  gap: 5px;
+  justify-content: center; 
+  padding: 10px 0; 
+}
+
+
+.test-sec:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.test-container {
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+  padding: 0;
+  flex-wrap: nowrap; 
+}

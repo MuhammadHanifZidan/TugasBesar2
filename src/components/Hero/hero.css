@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ), url("../../assets/Landing.png") center/cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header .wrapper .cta {
+  font-family: "Bebas Neue";
+  font-size: 35px;
+  padding: 10px 75px;
+  color: white;
+  background-color: #37B7C3;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+h1{
+    color: white;
+    font-size: 108px;
+    font-family: "montserrat";
+    text-align: center;
+    margin-top: -32px;
+    margin-bottom: 107px;
+    width: auto;
+    white-space: nowrap;
+}
+
+h2{
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+}
+
+h3{
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    color: white;
+    letter-spacing: 15%;
+}
+
+p{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: white;
+    text-align: justify;
+}
+
+.sub-title{
+    font-family: "Bebas Neue";
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: normal;
+    font-weight: lighter;
+}

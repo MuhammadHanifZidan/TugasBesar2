@@ -1,0 +1,30 @@
+:root{
+    --blue-color: #071952;
+    --darkGreen-color: #088395;
+    --green-color: #37B7C3; 
+    --h1-font-family: "Montserrat", Helvetica;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+
+
+.wrapper{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    font-family: 'Bebas Neue' ;
+    background-color: #071952;
+}
