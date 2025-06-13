@@ -7,7 +7,7 @@
 
 .facility-container {
   width: 100%;
-  max-width: 1200px; /* Lebih lebar untuk 4 kolom */
+  max-width: 1200px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,8 +46,6 @@
   width: 100%;
 }
 
-
-
 .facility-card:hover {
   transform: translateY(-5px);
   background-color: rgba(255, 255, 255, 0.1);
@@ -75,7 +73,7 @@
 .facility-card {
   display: flex;
   flex-direction: column;
-  height: 100%; /* Tinggi penuh */
+  height: 100%; 
   gap: 15px;
   padding: 30px 20px;
   background-color: rgba(255, 255, 255, 0.05);

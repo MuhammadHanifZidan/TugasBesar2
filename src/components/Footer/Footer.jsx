@@ -20,8 +20,8 @@ const footer = () => {
             <a href='https://maps.app.goo.gl/DrqNYCsfEWSBmuUC6' target='_blank'>Google maps</a>
           </div>
         </div>
-        <div className="line-footer">
-          <img src={Line}></img>
+        <div className="line" >
+          <Line />
         </div>
         <div className="footer-copyright">© 2025 Curug Leuwi Hejo.</div>
       </div>

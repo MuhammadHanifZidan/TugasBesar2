@@ -16,12 +16,13 @@ import Picnic from './Picnic.svg';
 import pp1 from './pp1.png';
 import pp2 from './pp2.png';
 import pp3 from './pp3.png';
-import Star from './Star.svg';
+import Star from './Star.jsx';
 import Swimming from './Swimming.png';
 import Toilet from './Toilet.svg';
 import Trekking from './Trekking.png';
 import Tube from './Tube.svg';
 import Logo from './leuwihejo.com.png';
-import Line from './line 1.svg';
+import Line from './Line.jsx';
+import image14 from './image 14.png';
 
-export {Camera,FirstAid,Food,Hanger,Image6,Image7,Image8,Image9,Image10,Image11,Image12,Image13,Landing,Parking,Picnic,pp1,pp2,pp3,Star,Swimming,Toilet,Trekking,Tube,Logo,Line}
+export {Camera,FirstAid,Food,Hanger,Image6,Image7,Image8,Image9,Image10,Image11,Image12,Image13,image14,Landing,Parking,Picnic,pp1,pp2,pp3,Star,Swimming,Toilet,Trekking,Tube,Logo,Line}

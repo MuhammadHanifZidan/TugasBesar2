@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Star } from '../../assets'; // Import SVG
+import { Star } from '../../assets'; 
 import './Form.css';
 
 const Form = () => {
@@ -57,19 +57,19 @@ const Form = () => {
           <div className="form-group">
             <label>Rate your experience:</label>
             <div className="rating-container">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <button
-                    type="button"
-                    key={star}
-                    className="star-button"
-                    onMouseEnter={() => setHoverRating(star)}
-                    onMouseLeave={() => setHoverRating(0)}
-                    onClick={() => setRating(star)}
-                >
-                <img src={Star} alt="star" className={`star-icon ${star <= (hoverRating || rating) ? 'filled' : ''}`} />
-
-                </button>))}
-            </div>
+  {[1, 2, 3, 4, 5].map((star) => (
+    <button
+      type="button"
+      key={star}
+      className="star-button"
+      onMouseEnter={() => setHoverRating(star)}
+      onMouseLeave={() => setHoverRating(0)}
+      onClick={() => setRating(star)}
+    >
+      <Star filled={star <= (hoverRating || rating)} />
+    </button>
+  ))}
+</div>
           </div>
           
           <button type="submit" className="submit-button">SUBMIT</button>

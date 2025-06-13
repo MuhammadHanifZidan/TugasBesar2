@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import {
   Image6, Image7, Image8, Image9,
-  Image10, Image11, Image13
+  Image10, Image11, Image13,
+  image14
 } from '../../assets'
 import './Gallery.css'
 
@@ -11,7 +12,7 @@ const Gallery = () => {
 
   const openLightbox = (imgSrc) => {
     setSelectedImage(imgSrc)
-    setIsZoomed(false) // Reset zoom state ketika gambar baru dipilih
+    setIsZoomed(false) 
   }
 
   const closeLightbox = () => {
@@ -20,16 +21,16 @@ const Gallery = () => {
   }
 
   const toggleZoom = (e) => {
-    e.stopPropagation() // Mencegah event bubbling ke overlay
+    e.stopPropagation() 
     setIsZoomed(!isZoomed)
   }
 
   return (
-    <div className="wrapper">
+    <div className="gallery-wrapper">
       <h1 className="gallery-title">GALLERY</h1>
 
       <div className="gallery-container">
-        {[Image6, Image8, Image7, Image9, Image10, Image11, Image13].map((img, idx) => (
+        {[Image6, Image8, Image7, Image9, Image10, Image11, Image13, image14].map((img, idx) => (
           <img key={idx} src={img} alt="gallery" onClick={() => openLightbox(img)} />
         ))}
       </div>

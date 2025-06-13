@@ -3,76 +3,22 @@ import "./testimonial.css";
 import { Line, Star, pp1, pp2, pp3 } from '../../assets';
 
 const Testimonial = () => {
-  const testimonialRef = useRef(null);
-  const testSecRefs = useRef([]);
-  const titleRef = useRef(null);
-  const lineRef = useRef(null);
-
-  const addToRefs = (el) => {
-    if (el && !testSecRefs.current.includes(el)) {
-      testSecRefs.current.push(el);
-    }
-  };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            
-            // Animate title
-            if (titleRef.current) {
-              titleRef.current.classList.add('show-element');
-            }
-            
-            // Animate line
-            if (lineRef.current) {
-              setTimeout(() => {
-                lineRef.current.classList.add('show-element');
-              }, 300);
-            }
-            
-            // Animate cards
-            testSecRefs.current.forEach((card, index) => {
-              setTimeout(() => {
-                card.classList.add('show-card');
-              }, 500 + (index * 150));
-            });
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (testimonialRef.current) {
-      observer.observe(testimonialRef.current);
-    }
-
-    return () => {
-      if (testimonialRef.current) {
-        observer.unobserve(testimonialRef.current);
-      }
-    };
-  }, []);
 
   return (
     <div className="wrapper">
-      <div className="testimonial" ref={testimonialRef}>
-        <div className="title" ref={titleRef}>
+      <div className="testimonial">
+        <div className="title">
           <h2>Real Stories, Real Adventure</h2>
         </div>
-        <div className="line" ref={lineRef}>
-          <img src={Line} alt="Line divider" />
+        <div className="line">
+          <Line/>
         </div>
         <div className="test-container">
-          <div className="test-sec" ref={addToRefs}>
+          <div className="test-sec">
             <div className="img">
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
+              {[...Array(5)].map((_, i) => (
+              <Star key={i} filled={5}/>
+              ))}
             </div>
             <div className="test">
               <p style={{fontWeight: 400}}>“Curug Leuwi Hejo is breathtaking! The water is so clear and refreshing.”</p>
@@ -82,13 +28,11 @@ const Testimonial = () => {
               <p>John Thor</p>
             </div>
           </div>
-          <div className="test-sec" ref={addToRefs}>
+          <div className="test-sec">
             <div className="img">
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
+              {[...Array(5)].map((_, i) => (
+              <Star key={i} filled={5}/>
+              ))}
             </div>
             <div className="test">
               <p style={{fontWeight: 400}}>"Hidden Paradise! The turquoise water and lush greenery took my breath away. 
@@ -100,13 +44,11 @@ const Testimonial = () => {
               <p>Sarah Miller</p>
             </div>
           </div>
-          <div className="test-sec" ref={addToRefs}>
+          <div className="test-sec">
             <div className="img">
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
-              <img src={Star} alt="Star rating"></img>
+              {[...Array(5)].map((_, i) => (
+              <Star key={i} filled={5}/>
+              ))}
             </div>
             <div className="test">
               <p style={{fontWeight: 400}}>"Perfect for kids! Our 7-year-old loved the shallow pools. The path is well-maintained, 
