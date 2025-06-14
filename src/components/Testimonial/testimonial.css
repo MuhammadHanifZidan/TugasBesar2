@@ -9,7 +9,6 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-
 p {
   font-family: "Poppins";
   font-size: 16px;
@@ -87,21 +86,9 @@ h2 {
 }
 
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
 .testimonial {
   opacity: 0;
-  animation: fadeInUp 1s ease forwards;
+  animation: fadeIn 1s ease forwards;
   animation-delay: 0.5s;
 }
 

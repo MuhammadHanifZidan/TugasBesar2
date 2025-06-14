@@ -82,7 +82,7 @@
   align-items: center;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeSlideUp 0.6s ease-out forwards;
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
 .card-info {
@@ -158,10 +158,3 @@
 .facility-card:nth-child(6) { animation-delay: 0.5s; }
 .facility-card:nth-child(7) { animation-delay: 0.6s; }
 .facility-card:nth-child(8) { animation-delay: 0.7s; }
-
-@keyframes fadeSlideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}

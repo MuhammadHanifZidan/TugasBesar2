@@ -14,23 +14,18 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
-  gap: 120px; /* Diperbesar dari 60px ke 120px */
+  gap: 120px; 
 }
-
-/* Hapus margin khusus untuk first-child */
-/* .footer-content:first-child {
-  margin-right: 80px; 
-} */
 
 .footer-content {
   flex: 1;
   max-width: 380px;
 }
 
-/* Konten pertama lebih lebar */
+
 .footer-content:first-child {
-  flex: 2; /* Lebih lebar dari yang lain */
-  max-width: 500px; /* Lebar maks lebih besar */
+  flex: 2; 
+  max-width: 500px; 
 }
 
 .footer h3 {
@@ -55,7 +50,7 @@
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
-  display: inline-block; /* Untuk spacing yang lebih baik */
+  display: inline-block; 
 }
 
 .footer a:hover {
@@ -68,7 +63,6 @@
   color: white;
 }
 
-/* Copyright text */
 .footer-copyright {
   margin-top: 40px;
   text-align: center;
@@ -81,11 +75,11 @@
     margin-top: 32px;
 }
 
-/* Responsive untuk layar kecil */
+
 @media (max-width: 900px) {
   .footer-container {
     flex-direction: column;
-    gap: 30px; /* Kurangi jarak antar konten */
+    gap: 30px; 
   }
 
   .footer-content:first-child {
@@ -98,7 +92,7 @@
   }
 }
 
-/* Responsive untuk layar sangat kecil / HP */
+
 @media (max-width: 480px) {
   .footer {
     padding: 30px 15px;
